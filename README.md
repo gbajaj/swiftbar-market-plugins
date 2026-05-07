@@ -89,12 +89,7 @@ Leave `GIST_BASE_URL` as-is. The default URL points to a live Gist updated autom
 
 ### Option B — Run your own backend
 
-Point `GIST_BASE_URL` to your own Gist and run the [mm backend](https://github.com/gbajaj/mm) to generate the data. The `mm` project handles:
-
-- TradingView screener queries (4%/day, 20%/week scanners)
-- Watchlist auto-add, expiry, and status tracking
-- Earnings calendar from TradingView component data
-- Scheduled pushes to GitHub Gist via launchd
+Point `GIST_BASE_URL` to your own Gist and push JSON files matching the schemas below on whatever schedule you prefer. The scripts only need a reachable Gist URL — the backend can be anything.
 
 ---
 
@@ -180,8 +175,3 @@ The scripts detect DST automatically using the system clock. If your Mac's timez
 
 macOS may block the script on first run. Go to System Settings → Privacy & Security → scroll down and click Allow.
 
----
-
-## Related
-
-- [mm — market monitoring backend](https://github.com/gbajaj/mm) — the Python project that generates these Gist files
