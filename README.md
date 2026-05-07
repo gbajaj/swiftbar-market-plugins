@@ -8,12 +8,14 @@ Three macOS menu bar plugins for US equity market monitoring, built on [SwiftBar
 
 ### 📉📈 Market Scanner — `market_scanner.5m.sh`
 
-Live counts from TradingView momentum scanners, refreshed every 5 minutes during market hours.
+Live counts from TradingView momentum scanners.
 
 - Stocks up or down **4%+ today**
 - Stocks up or down **20%+ this week**
 
 Menu bar shows `▼{down} ▲{up}` at a glance.
+
+**Updated:** every 30 minutes on US trading days, from 6:35 AM PT (pre-market) through 5:00 PM PT (post-market). Not updated on weekends or US market holidays.
 
 ---
 
@@ -26,6 +28,8 @@ Active momentum watchlist grouped by recurrence — how many times a symbol has 
 - Volume icons: 🚀 near 52-week vol high · 📊 significantly elevated · 📈 2× average
 - 🚩 flagging status · ✅ triggered
 
+**Updated:** in sync with the market scanner — every 30 minutes on trading days, 6:35 AM – 5:00 PM PT. New symbols are auto-added when they hit the 20%+/week threshold; entries expire after ~10 trading days.
+
 ---
 
 ### 📅 Earnings Calendar — `earnings.5m.sh`
@@ -36,6 +40,8 @@ Upcoming earnings for QQQ components (large-cap Nasdaq stocks), with watchlist s
 - Grouped by date with Today / Tomorrow labels
 - Market cap sorted within each day
 - Watchlist overlap marked with 👁
+
+**Updated:** once daily after 1:00 PM PT on trading days. Shows earnings up to 14 days ahead.
 
 ---
 
